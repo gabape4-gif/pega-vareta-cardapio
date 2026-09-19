@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pega Vareta | Restaurante do Agreste — Cardápio Online</title>
+    <meta name="description" content="Cardápio online do restaurante Pega Vareta, sabores do Agreste nordestino com toques sofisticados. Pratos regionais, internacionais, drinks e vinhos selecionados.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-flame">🔥</div>
+            <p class="preloader-text">Pega Vareta</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">🔥</span>
+                <span class="logo-text">Pega Vareta</span>
+            </a>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#entradas" data-section="entradas">Entradas</a></li>
+                <li><a href="#regionais" data-section="regionais">Regionais</a></li>
+                <li><a href="#sofisticados" data-section="sofisticados">Sofisticados</a></li>
+                <li><a href="#internacionais" data-section="internacionais">Internacionais</a></li>
+                <li><a href="#drinks" data-section="drinks">Drinks</a></li>
+                <li><a href="#vinhos" data-section="vinhos">Vinhos</a></li>
+                <li><a href="#sobremesas" data-section="sobremesas">Sobremesas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="hero-particles"></div>
+        <div class="hero-content">
+            <p class="hero-subtitle animate-fade-up">Restaurante do Agreste</p>
+            <h1 class="hero-title animate-fade-up delay-1">Pega Vareta</h1>
+            <div class="hero-divider animate-fade-up delay-2">
+                <span class="divider-line"></span>
+                <span class="divider-icon">🔥</span>
+                <span class="divider-line"></span>
+            </div>
+            <p class="hero-description animate-fade-up delay-3">Sabores autênticos do agreste nordestino com toques de sofisticação internacional</p>
+            <a href="#entradas" class="hero-cta animate-fade-up delay-4">Explorar Cardápio</a>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== ENTRADAS ==================== -->
+        <section id="entradas" class="menu-section">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Entradas</h2>
+                <p class="section-subtitle">Para começar com o pé direito</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="menu-grid">
+                <article class="menu-card" data-aos="fade-up">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?w=400&h=300&fit=crop" alt="Bolinho de Bacalhau" loading="lazy">
+                        <div class="card-badge">Popular</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Bolinho de Bacalhau</h3>
+                        <p class="card-desc">6 unidades crocantes, servidos com molho tártaro da casa e limão siciliano</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 38,90</span>
+                            <span class="card-serves">Serve 2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=400&h=300&fit=crop" alt="Queijo Coalho na Brasa" loading="lazy">
+                        <div class="card-badge regional">Regional</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Queijo Coalho na Brasa</h3>
+                        <p class="card-desc">Espetos de queijo coalho grelhados com melaço de cana e orégano fresco</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 29,90</span>
+                            <span class="card-serves">Serve 2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=400&h=300&fit=crop" alt="Bruschetta Italiana" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Bruschetta Clássica</h3>
+                        <p class="card-desc">Pão ciabatta tostado com tomates frescos, manjericão, azeite extra virgem e parmesão</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 34,90</span>
+                            <span class="card-serves">Serve 2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&h=300&fit=crop" alt="Carne de Sol Desfiada" loading="lazy">
+                        <div class="card-badge regional">Regional</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Dadinhos de Carne de Sol</h3>
+                        <p class="card-desc">Cubinhos crocantes de carne de sol com geleia de pimenta biquinho</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 42,90</span>
+                            <span class="card-serves">Serve 2-3</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?w=400&h=300&fit=crop" alt="Carpaccio" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Carpaccio de Filé Mignon</h3>
+                        <p class="card-desc">Lâminas finas de filé mignon com rúcula, alcaparras, parmesão e azeite trufado</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 52,90</span>
+                            <span class="card-serves">Serve 1-2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&h=300&fit=crop" alt="Mandioca Frita" loading="lazy">
+                        <div class="card-badge regional">Regional</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Macaxeira Frita com Charque</h3>
+                        <p class="card-desc">Macaxeira crocante acompanhada de charque desfiado e manteiga de garrafa</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 36,90</span>
+                            <span class="card-serves">Serve 2-3</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==================== PRATOS REGIONAIS ==================== -->
+        <section id="regionais" class="menu-section section-alt">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Sabores do Nordeste</h2>
+                <p class="section-subtitle">O melhor da culinária regional nordestina</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="menu-grid">
+                <article class="menu-card" data-aos="fade-up">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1574484284002-952d92456975?w=400&h=300&fit=crop" alt="Baião de Dois" loading="lazy">
+                        <div class="card-badge chef">⭐ Chef</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Baião de Dois Completo</h3>
+                        <p class="card-desc">Arroz com feijão de corda, queijo coalho, nata, charque e farofa de manteiga de garrafa</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 59,90</span>
+                            <span class="card-serves">Serve 1-2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop" alt="Carne de Sol" loading="lazy">
+                        <div class="card-badge">Popular</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Carne de Sol na Nata</h3>
+                        <p class="card-desc">Carne de sol acebolada na nata com macaxeira cozida, arroz e vinagrete</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 69,90</span>
+                            <span class="card-serves">Serve 1-2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop" alt="Buchada de Bode" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Buchada de Bode</h3>
+                        <p class="card-desc">Receita tradicional com temperos frescos, servida com pirão e arroz branco</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 64,90</span>
+                            <span class="card-serves">Serve 1</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&h=300&fit=crop" alt="Bode Guisado" loading="lazy">
+                        <div class="card-badge chef">⭐ Chef</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Bode Guisado do Agreste</h3>
+                        <p class="card-desc">Bode cozido lentamente com coentro, cominho e pimenta do reino. Acompanha pirão, arroz e farofa</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 74,90</span>
+                            <span class="card-serves">Serve 2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&h=300&fit=crop" alt="Galinha Caipira" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Galinha Caipira ao Molho</h3>
+                        <p class="card-desc">Galinha caipira cozida com quiabo, maxixe e pirão de galinha. Receita da avó</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 62,90</span>
+                            <span class="card-serves">Serve 2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?w=400&h=300&fit=crop" alt="Sarapatel" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sarapatel Pernambucano</h3>
+                        <p class="card-desc">Sarapatel tradicional com sangue de porco, vísceras e temperos especiais do agreste</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 56,90</span>
+                            <span class="card-serves">Serve 1-2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?w=400&h=300&fit=crop" alt="Rubacão" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Rubacão Paraibano</h3>
+                        <p class="card-desc">Arroz, feijão verde, queijo coalho, carne de sol desfiada e nata. Um clássico!</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 54,90</span>
+                            <span class="card-serves">Serve 1-2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&h=300&fit=crop" alt="Peixada Nordestina" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Peixada Nordestina</h3>
+                        <p class="card-desc">Peixe fresco cozido com leite de coco, tomate, pimentão, coentro e pirão</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 68,90</span>
+                            <span class="card-serves">Serve 2</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==================== PRATOS SOFISTICADOS ==================== -->
+        <section id="sofisticados" class="menu-section">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Pratos Sofisticados</h2>
+                <p class="section-subtitle">Alta gastronomia com alma sertaneja</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="menu-grid">
+                <article class="menu-card premium" data-aos="fade-up">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=400&h=300&fit=crop" alt="Filé Mignon" loading="lazy">
+                        <div class="card-badge chef">⭐ Chef</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Filé Mignon ao Molho de Vinho</h3>
+                        <p class="card-desc">Medalhão de filé mignon grelhado, molho demi-glace com vinho tinto, risoto de parmesão e aspargos</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 98,90</span>
+                            <span class="card-serves">Serve 1</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card premium" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1432139509613-5c4255a1d181?w=400&h=300&fit=crop" alt="Salmão Grelhado" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Salmão com Crosta de Ervas</h3>
+                        <p class="card-desc">Salmão com crosta de ervas finas, purê de batata trufado e legumes grelhados na manteiga</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 109,90</span>
+                            <span class="card-serves">Serve 1</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card premium" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=400&h=300&fit=crop" alt="Cordeiro" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Carré de Cordeiro</h3>
+                        <p class="card-desc">Carré de cordeiro com crosta de mostarda e ervas, acompanhado de ratatouille e batata fondant</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 119,90</span>
+                            <span class="card-serves">Serve 1</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card premium" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?w=400&h=300&fit=crop" alt="Risoto" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Risoto de Camarão</h3>
+                        <p class="card-desc">Risoto cremoso com camarões flambados, tomate seco, açafrão e parmesão Gran Padano</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 89,90</span>
+                            <span class="card-serves">Serve 1</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card premium" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400&h=300&fit=crop" alt="Ancho Steak" loading="lazy">
+                        <div class="card-badge">Popular</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Ancho Steak 400g</h3>
+                        <p class="card-desc">Corte Ancho maturado 21 dias, grelhado na brasa, mantega de ervas, batata hasselback</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 129,90</span>
+                            <span class="card-serves">Serve 1</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card premium" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1535400255456-984241443b29?w=400&h=300&fit=crop" alt="Polvo Grelhado" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Polvo à Lagareiro</h3>
+                        <p class="card-desc">Tentáculos de polvo grelhados com azeite português, batata ao murro e brócolis</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 134,90</span>
+                            <span class="card-serves">Serve 1</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==================== PRATOS INTERNACIONAIS ==================== -->
+        <section id="internacionais" class="menu-section section-alt">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Sabores do Mundo</h2>
+                <p class="section-subtitle">Americanos, europeus e além</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="menu-grid">
+                <article class="menu-card" data-aos="fade-up">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" alt="Smash Burger" loading="lazy">
+                        <div class="card-badge">Popular</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Smash Burger Pega Vareta</h3>
+                        <p class="card-desc">Duplo smash de blend especial, cheddar inglês, bacon crocante, picles e molho especial da casa</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 49,90</span>
+                            <span class="card-serves">Serve 1</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop" alt="Pizza" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pizza Napolitana Margherita</h3>
+                        <p class="card-desc">Massa fermentada 72h, molho San Marzano, mozzarella di bufala e manjericão fresco</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 62,90</span>
+                            <span class="card-serves">Serve 1-2</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&h=300&fit=crop" alt="Pasta" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Fettuccine Alfredo</h3>
+                        <p class="card-desc">Massa fresca artesanal ao molho cremoso de parmesão com frango grelhado e trufas</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 72,90</span>
+                            <span class="card-serves">Serve 1</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=400&h=300&fit=crop" alt="Fish and Chips" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Fish & Chips Britânico</h3>
+                        <p class="card-desc">Filé de bacalhau empanado em cerveja artesanal, com chips dourados e purê de ervilha</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 58,90</span>
+                            <span class="card-serves">Serve 1</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&h=300&fit=crop" alt="Ramen" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Tonkotsu Ramen</h3>
+                        <p class="card-desc">Caldo de porco 18 horas, macarrão artesanal, chashu, ovo marinado e cebolinha</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 55,90</span>
+                            <span class="card-serves">Serve 1</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1550304943-4f24f54ddde9?w=400&h=300&fit=crop" alt="Costela BBQ" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Costela BBQ Texas Style</h3>
+                        <p class="card-desc">Costela suína defumada 8 horas com molho BBQ da casa, coleslaw e pão de milho</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 84,90</span>
+                            <span class="card-serves">Serve 1-2</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ==================== DRINKS ==================== -->
+        <section id="drinks" class="menu-section drinks-section">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Drinks & Coquetéis</h2>
+                <p class="section-subtitle">Refresque-se com sabor e estilo</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Sub-section: Bebidas Comuns -->
+            <div class="drinks-subsection">
+                <h3 class="subsection-title">
+                    <span class="subsection-icon">🥤</span>
+                    Bebidas
+                </h3>
+                <div class="drinks-grid">
+                    <div class="drink-item" data-aos="fade-up">
+                        <div class="drink-icon">🧃</div>
+                        <div class="drink-info">
+                            <h4>Suco Natural</h4>
+                            <p>Acerola, caju, manga, goiaba, maracujá ou abacaxi</p>
+                        </div>
+                        <span class="drink-price">R$ 14,90</span>
+                    </div>
+                    <div class="drink-item" data-aos="fade-up" data-aos-delay="50">
+                        <div class="drink-icon">🥥</div>
+                        <div class="drink-info">
+                            <h4>Água de Coco</h4>
+                            <p>Natural, direto do coco verde do agreste</p>
+                        </div>
+                        <span class="drink-price">R$ 12,90</span>
+                    </div>
+                    <div class="drink-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="drink-icon">🍺</div>
+                        <div class="drink-info">
+                            <h4>Cerveja Artesanal</h4>
+                            <p>IPA, Witbier, Pilsen ou Stout — 500ml</p>
+                        </div>
+                        <span class="drink-price">R$ 22,90</span>
+                    </div>
+                    <div class="drink-item" data-aos="fade-up" data-aos-delay="150">
+                        <div class="drink-icon">🍺</div>
+                        <div class="drink-info">
+                            <h4>Cerveja Long Neck</h4>
+                            <p>Heineken, Stella Artois, Corona ou Budweiser</p>
+                        </div>
+                        <span class="drink-price">R$ 16,90</span>
+                    </div>
+                    <div class="drink-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="drink-icon">☕</div>
+                        <div class="drink-info">
+                            <h4>Café Especial</h4>
+                            <p>Grãos selecionados do agreste, torra artesanal</p>
+                        </div>
+                        <span class="drink-price">R$ 9,90</span>
+                    </div>
+                    <div class="drink-item" data-aos="fade-up" data-aos-delay="250">
+                        <div class="drink-icon">💧</div>
+                        <div class="drink-info">
+                            <h4>Água Mineral</h4>
+                            <p>Com gás ou sem gás — 500ml</p>
+                        </div>
+                        <span class="drink-price">R$ 7,90</span>
+                    </div>
+                    <div class="drink-item" data-aos="fade-up" data-aos-delay="300">
+                        <div class="drink-icon">🥛</div>
+                        <div class="drink-info">
+                            <h4>Refrigerante</h4>
+                            <p>Coca-Cola, Guaraná, Sprite ou Fanta — 350ml</p>
+                        </div>
+                        <span class="drink-price">R$ 9,90</span>
+                    </div>
+                    <div class="drink-item" data-aos="fade-up" data-aos-delay="350">
+                        <div class="drink-icon">🍵</div>
+                        <div class="drink-info">
+                            <h4>Chá Gelado</h4>
+                            <p>Hibisco com gengibre, camomila com mel ou mate com limão</p>
+                        </div>
+                        <span class="drink-price">R$ 12,90</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sub-section: Coquetéis Sofisticados -->
+            <div class="drinks-subsection cocktails-subsection">
+                <h3 class="subsection-title">
+                    <span class="subsection-icon">🍸</span>
+                    Coquetéis Sofisticados
+                </h3>
+                <div class="cocktails-grid">
+                    <article class="cocktail-card" data-aos="fade-up">
+                        <div class="cocktail-image">
+                            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400&h=500&fit=crop" alt="Caipirinha Premium" loading="lazy">
+                        </div>
+                        <div class="cocktail-content">
+                            <h4 class="cocktail-name">Caipirinha do Agreste</h4>
+                            <p class="cocktail-desc">Cachaça artesanal envelhecida, limão, rapadura ralada e hortelã do sertão</p>
+                            <span class="cocktail-price">R$ 32,90</span>
+                        </div>
+                    </article>
+
+                    <article class="cocktail-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="cocktail-image">
+                            <img src="https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=400&h=500&fit=crop" alt="Gin Tônica" loading="lazy">
+                        </div>
+                        <div class="cocktail-content">
+                            <h4 class="cocktail-name">Gin Tônica Tropical</h4>
+                            <p class="cocktail-desc">Gin premium, tônica artesanal, pepino, zimbro, cardamomo e fatias de toranja</p>
+                            <span class="cocktail-price">R$ 38,90</span>
+                        </div>
+                    </article>
+
+                    <article class="cocktail-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cocktail-image">
+                            <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?w=400&h=500&fit=crop" alt="Negroni" loading="lazy">
+                        </div>
+                        <div class="cocktail-content">
+                            <h4 class="cocktail-name">Negroni Defumado</h4>
+                            <p class="cocktail-desc">Gin, Campari, Vermute Rosso, defumado com lascas de aroeira do agreste</p>
+                            <span class="cocktail-price">R$ 42,90</span>
+                        </div>
+                    </article>
+
+                    <article class="cocktail-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="cocktail-image">
+                            <img src="https://images.unsplash.com/photo-1587223962217-f4ec24ef3fbc?w=400&h=500&fit=crop" alt="Mojito" loading="lazy">
+                        </div>
+                        <div class="cocktail-content">
+                            <h4 class="cocktail-name">Mojito Nordestino</h4>
+                            <p class="cocktail-desc">Rum branco, hortelã fresca, lima, espumante e toque de caju</p>
+                            <span class="cocktail-price">R$ 36,90</span>
+                        </div>
+                    </article>
+
+                    <article class="cocktail-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="cocktail-image">
+                            <img src="https://images.unsplash.com/photo-1560508179-b2c9a3f8e92b?w=400&h=500&fit=crop" alt="Espresso Martini" loading="lazy">
+                        </div>
+                        <div class="cocktail-content">
+                            <h4 class="cocktail-name">Espresso Martini</h4>
+                            <p class="cocktail-desc">Vodka premium, licor de café, espresso fresco e espuma de baunilha</p>
+                            <span class="cocktail-price">R$ 44,90</span>
+                        </div>
+                    </article>
+
+                    <article class="cocktail-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="cocktail-image">
+                            <img src="https://images.unsplash.com/photo-1582056615449-20901fd4f37c?w=400&h=500&fit=crop" alt="Old Fashioned" loading="lazy">
+                        </div>
+                        <div class="cocktail-content">
+                            <h4 class="cocktail-name">Old Fashioned</h4>
+                            <p class="cocktail-desc">Bourbon premium, Angostura bitters, açúcar demerara e casca de laranja defumada</p>
+                            <span class="cocktail-price">R$ 46,90</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== VINHOS ==================== -->
+        <section id="vinhos" class="menu-section section-alt wine-section">
+            <div class="section-header">
+                <span class="section-number">06</span>
+                <h2 class="section-title">Carta de Vinhos</h2>
+                <p class="section-subtitle">Seleção premium para harmonizar sua experiência</p>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="wine-categories">
+                <!-- Tintos -->
+                <div class="wine-category" data-aos="fade-up">
+                    <div class="wine-category-header">
+                        <span class="wine-glass-icon">🍷</span>
+                        <h3>Vinhos Tintos</h3>
+                    </div>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-info">
+                                <h4>Casillero del Diablo Cabernet Sauvignon</h4>
+                                <p>Chile — Corpo médio, notas de frutas vermelhas e carvalho</p>
+                            </div>
+                            <div class="wine-prices">
+                                <span class="wine-price"><small>Taça</small> R$ 28</span>
+                                <span class="wine-price"><small>Garrafa</small> R$ 119</span>
+                            </div>
+                        </div>
+                        <div class="wine-item">
+                            <div class="wine-info">
+                                <h4>Malbec Alamos — Catena Zapata</h4>
+                                <p>Argentina — Encorpado, taninos aveludados, notas de ameixa e chocolate</p>
+                            </div>
+                            <div class="wine-prices">
+                                <span class="wine-price"><small>Taça</small> R$ 32</span>
+                                <span class="wine-price"><small>Garrafa</small> R$ 139</span>
+                            </div>
+                        </div>
+                        <div class="wine-item">
+                            <div class="wine-info">
+                                <h4>Chianti Classico DOCG — Ruffino</h4>
+                                <p>Itália — Elegante, frutas vermelhas, especiarias e toque terroso</p>
+                            </div>
+                            <div class="wine-prices">
+                                <span class="wine-price"><small>Taça</small> R$ 38</span>
+                                <span class="wine-price"><small>Garrafa</small> R$ 169</span>
+                            </div>
+                        </div>
+                        <div class="wine-item">
+                            <div class="wine-info">
+                                <h4>Pinot Noir Reserve — Viña Undurraga</h4>
+                                <p>Chile — Leve e sofisticado, cereja, framboesa e toque floral</p>
+                            </div>
+                            <div class="wine-prices">
+                                <span class="wine-price"><small>Taça</small> R$ 34</span>
+                                <span class="wine-price"><small>Garrafa</small> R$ 149</span>
+                            </div>
+                        </div>
+                        <div class="wine-item premium-wine">
+                            <div class="wine-info">
+                                <h4>Amarone della Valpolicella — Bertani ✨</h4>
+                                <p>Itália — Premium. Intenso, complexo, frutas secas, chocolate e especiarias</p>
+                            </div>
+                            <div class="wine-prices">
+                                <span class="wine-price"><small>Garrafa</small> R$ 489</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brancos -->
+                <div class="wine-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="wine-category-header">
+                        <span class="wine-glass-icon">🥂</span>
+                        <h3>Vinhos Brancos & Rosés</h3>
+                    </div>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-info">
+                                <h4>Sauvignon Blanc — Cloudy Bay</h4>
+                                <p>Nova Zelândia — Fresco, cítrico, notas de maracujá e grama cortada</p>
+                            </div>
+                            <div class="wine-prices">
+                                <span class="wine-price"><small>Taça</small> R$ 36</span>
+                                <span class="wine-price"><small>Garrafa</small> R$ 159</span>
+                            </div>
+                        </div>
+                        <div class="wine-item">
+                            <div class="wine-info">
+                                <h4>Chardonnay — Santa Rita 120</h4>
+                                <p>Chile — Refrescante, notas tropicais e toque amanteigado</p>
+                            </div>
+                            <div class="wine-prices">
+                                <span class="wine-price"><small>Taça</small> R$ 26</span>
+                                <span class="wine-price"><small>Garrafa</small> R$ 109</span>
+                            </div>
+                        </div>
+                        <div class="wine-item">
+                            <div class="wine-info">
+                                <h4>Rosé Whispering Angel — Caves d'Esclans</h4>
+                                <p>França, Provence — Delicado, morango, pétalas de rosa e mineral</p>
+                            </div>
+                            <div class="wine-prices">
+                                <span class="wine-price"><small>Taça</small> R$ 42</span>
+                                <span class="wine-price"><small>Garrafa</small> R$ 189</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Espumantes -->
+                <div class="wine-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="wine-category-header">
+                        <span class="wine-glass-icon">🍾</span>
+                        <h3>Espumantes & Champagnes</h3>
+                    </div>
+                    <div class="wine-list">
+                        <div class="wine-item">
+                            <div class="wine-info">
+                                <h4>Prosecco DOC — Villa Sandi</h4>
+                                <p>Itália — Borbulhas finas, pera, maçã verde e flores brancas</p>
+                            </div>
+                            <div class="wine-prices">
+                                <span class="wine-price"><small>Taça</small> R$ 30</span>
+                                <span class="wine-price"><small>Garrafa</small> R$ 129</span>
+                            </div>
+                        </div>
+                        <div class="wine-item">
+                            <div class="wine-info">
+                                <h4>Chandon Brut Rosé</h4>
+                                <p>Brasil — Elegante, frutas vermelhas, cítricos e brioche</p>
+                            </div>
+                            <div class="wine-prices">
+                                <span class="wine-price"><small>Garrafa</small> R$ 139</span>
+                            </div>
+                        </div>
+                        <div class="wine-item premium-wine">
+                            <div class="wine-info">
+                                <h4>Moët & Chandon Impérial Brut ✨</h4>
+                                <p>França, Champagne — Icônico, pera, maçã, notas de brioche e elegância pura</p>
+                            </div>
+                            <div class="wine-prices">
+                                <span class="wine-price"><small>Garrafa</small> R$ 549</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SOBREMESAS ==================== -->
+        <section id="sobremesas" class="menu-section">
+            <div class="section-header">
+                <span class="section-number">07</span>
+                <h2 class="section-title">Sobremesas</h2>
+                <p class="section-subtitle">O grand finale perfeito</p>
+                <div class="section-divider"></div>
+            </div>
+            <div class="menu-grid">
+                <article class="menu-card dessert-card" data-aos="fade-up">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" alt="Cartola" loading="lazy">
+                        <div class="card-badge regional">Regional</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cartola Pernambucana</h3>
+                        <p class="card-desc">Banana frita com queijo coalho derretido, canela e açúcar. Clássico do Nordeste!</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 28,90</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card dessert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?w=400&h=300&fit=crop" alt="Petit Gateau" loading="lazy">
+                        <div class="card-badge chef">⭐ Chef</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Petit Gâteau</h3>
+                        <p class="card-desc">Bolinho quente de chocolate belga 70% com sorvete de baunilha e calda de frutas vermelhas</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 36,90</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card dessert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop" alt="Pudim" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Pudim de Leite Condensado</h3>
+                        <p class="card-desc">Receita da avó, textura sedosa com calda de caramelo artesanal</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 22,90</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card dessert-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=400&h=300&fit=crop" alt="Bolo de Rolo" loading="lazy">
+                        <div class="card-badge regional">Regional</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Bolo de Rolo</h3>
+                        <p class="card-desc">Tradicional bolo de rolo pernambucano com goiabada cascão e sorvete de creme</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 26,90</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card dessert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=300&fit=crop" alt="Tiramisù" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Tiramisù Clássico</h3>
+                        <p class="card-desc">Camadas de biscoito champagne embebido em café, creme mascarpone e cacau</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 32,90</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card dessert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop" alt="Sorvete Artesanal" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Sorvete Artesanal do Agreste</h3>
+                        <p class="card-desc">3 bolas à escolha: tapioca, rapadura, caju, mangaba, siriguela ou umbu</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 24,90</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card dessert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=300&fit=crop" alt="Cheesecake" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cheesecake de Goiabada</h3>
+                        <p class="card-desc">Cheesecake cremoso com base de biscoito e calda de goiabada cascão. Romeu e Julieta!</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 30,90</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="menu-card dessert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop" alt="Crème Brûlée" loading="lazy">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Crème Brûlée</h3>
+                        <p class="card-desc">Creme de baunilha Bourbon com crosta caramelizada e frutas vermelhas frescas</p>
+                        <div class="card-footer">
+                            <span class="card-price">R$ 34,90</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">🔥</span>
+                <h3>Pega Vareta</h3>
+                <p>Restaurante do Agreste</p>
+            </div>
+            <div class="footer-info">
+                <div class="footer-col">
+                    <h4>Horário de Funcionamento</h4>
+                    <p>Terça a Quinta: 11h – 23h</p>
+                    <p>Sexta e Sábado: 11h – 00h</p>
+                    <p>Domingo: 11h – 16h</p>
+                    <p>Segunda: Fechado</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <p>📍 Rua do Agreste, 123 — Centro</p>
+                    <p>📞 (81) 99999-1234</p>
+                    <p>📧 contato@pegavareta.com.br</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Redes Sociais</h4>
+                    <p>📸 @pegavareta</p>
+                    <p>👤 /restaurantepegavareta</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pega Vareta — Todos os direitos reservados</p>
+                <p class="footer-note">Os preços podem sofrer alterações sem aviso prévio. Consulte o garçom.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
