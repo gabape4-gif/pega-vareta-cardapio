@@ -120,18 +120,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // === Image Lazy Load Error Handling ===
-    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
-        img.addEventListener('error', function() {
-            this.style.background = '#eaddcd';
-            this.alt = 'Imagem indisponível';
-            this.style.display = 'flex';
-            this.style.alignItems = 'center';
-            this.style.justifyContent = 'center';
-            this.style.color = '#1d3354';
-            this.style.fontFamily = 'Passion One';
-            this.style.fontSize = '1.2rem';
-        });
-    });
+    // === End of script ===
 
 });
