@@ -1,33 +1,20 @@
 /* ============================================
    PEGA VARETA — Restaurant Menu Scripts
-   Animations, Navigation & Interactivity
+   Artesanal Theme
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // === Preloader ===
-    const preloader = document.getElementById('preloader');
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.classList.add('hidden');
-        }, 800);
-    });
-
-    // Fallback: hide preloader after 3 seconds regardless
-    setTimeout(() => {
-        preloader.classList.add('hidden');
-    }, 3000);
-
     // === Navbar Scroll Effect ===
     const nav = document.getElementById('main-nav');
     const navLinks = document.querySelectorAll('.nav-links a');
-    const sections = document.querySelectorAll('.menu-section, .hero-section');
+    const sections = document.querySelectorAll('section, header');
 
     function handleNavScroll() {
-        if (window.scrollY > 50) {
-            nav.classList.add('scrolled');
+        if (window.scrollY > 10) {
+            nav.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
         } else {
-            nav.classList.remove('scrolled');
+            nav.style.boxShadow = 'none';
         }
     }
 
@@ -35,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function highlightActiveSection() {
         let current = '';
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 150;
+            const sectionTop = section.offsetTop - 100;
             const sectionHeight = section.offsetHeight;
             if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
                 current = section.getAttribute('id');
@@ -93,46 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // === Hero Particles ===
-    const particlesContainer = document.getElementById('hero-particles');
-    
-    function createParticle() {
-        const particle = document.createElement('div');
-        particle.classList.add('particle');
-        
-        const size = Math.random() * 4 + 2;
-        const left = Math.random() * 100;
-        const duration = Math.random() * 15 + 10;
-        const delay = Math.random() * 5;
-        
-        particle.style.cssText = `
-            width: ${size}px;
-            height: ${size}px;
-            left: ${left}%;
-            animation-duration: ${duration}s;
-            animation-delay: ${delay}s;
-        `;
-        
-        particlesContainer.appendChild(particle);
-        
-        // Remove after animation
-        setTimeout(() => {
-            particle.remove();
-        }, (duration + delay) * 1000);
-    }
-
-    // Create initial particles
-    for (let i = 0; i < 20; i++) {
-        createParticle();
-    }
-
-    // Continuously create new particles
-    setInterval(() => {
-        if (particlesContainer && document.visibilityState === 'visible') {
-            createParticle();
-        }
-    }, 2000);
-
     // === Smooth Scroll for Anchor Links ===
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -148,8 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // === Card Tilt Effect (Desktop only) ===
-    if (window.matchMedia('(min-width: 769px)').matches) {
-        const cards = document.querySelectorAll('.menu-card, .cocktail-card');
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+        const cards = document.querySelectorAll('.card, .wine-card');
         
         cards.forEach(card => {
             card.addEventListener('mousemove', (e) => {
@@ -159,14 +106,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 const centerX = rect.width / 2;
                 const centerY = rect.height / 2;
                 
-                const rotateX = (y - centerY) / centerY * -3;
-                const rotateY = (x - centerX) / centerX * 3;
+                const rotateX = (y - centerY) / centerY * -2;
+                const rotateY = (x - centerX) / centerX * 2;
                 
-                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+                card.style.boxShadow = '0 10px 20px rgba(0,0,0,0.05)';
             });
             
             card.addEventListener('mouseleave', () => {
                 card.style.transform = '';
+                card.style.boxShadow = 'none';
             });
         });
     }
@@ -174,15 +123,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // === Image Lazy Load Error Handling ===
     document.querySelectorAll('img[loading="lazy"]').forEach(img => {
         img.addEventListener('error', function() {
-            this.style.background = 'linear-gradient(135deg, #1c1c28, #2a2a38)';
+            this.style.background = '#eaddcd';
             this.alt = 'Imagem indisponível';
             this.style.display = 'flex';
             this.style.alignItems = 'center';
             this.style.justifyContent = 'center';
-            this.style.color = '#6b687a';
-            this.style.fontSize = '0.85rem';
+            this.style.color = '#1d3354';
+            this.style.fontFamily = 'Passion One';
+            this.style.fontSize = '1.2rem';
         });
     });
 
-    console.log('🔥 Pega Vareta — Menu carregado com sucesso!');
 });
